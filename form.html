@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <style>
+  p {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+ 
+  function getName(){
+    var x = 5;
+    $("#content").html($("#name").val());
+    alert($("#name").val());
+
+    $("#name").val("");
+    $("#name").focus();
+  }
+ 
+  </script>
+ 
+</head>
+<body>
+<input type="text" id="name" placeholder="Name" value="">
+<input type="button" value="Action" onclick="getName()">
+<div id="content"></div>
+</body>
+</html>
